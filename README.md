@@ -12,6 +12,14 @@
 8.  初始化创建仓库  git init
 9.  拷贝分支、上传远端  git checkout -b feature/voip 、git push origin feature/voip
 10. 提交代码  git commit -m "提交内容"
+11. 基于现有分支拉出一条新分支 git checkout -b feature/xxx   git push origin feature/xxx
+12. 基于远程仓库分支拉出一条本地不存在的分支 git checkout -b feature/xxx origin feature/xxx
+
+#### 首次使用
+git init 
+git config --global user.email ""
+git config --global user.name 
+git remote add origin http://xxx.git
 
 #### 使用场景说明
 
@@ -61,4 +69,5 @@ master分支。
 出现了冲突，请不要慌，在本地调试出正确代码版本并且本地测试完全ok后。再次push到远程仓库。
 
 四、 依赖远程仓库 submodule
+git submodule init && git submodule update
 
