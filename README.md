@@ -71,3 +71,9 @@ master分支。
 四、 依赖远程仓库 submodule
 git submodule init && git submodule update
 
+五、修改本地分支名与远端分支名
+修改本地分支名  git branch -m 'new_branch_name'   
+同步本地和远程，执行1、2
+1. git push origin :"old_branch_name" "new_branch_name"     delete remote old branch push new branch
+2. git push origin -u new_branch_name     sync local and remote
+
