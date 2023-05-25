@@ -69,11 +69,15 @@ master分支。
 出现了冲突，请不要慌，在本地调试出正确代码版本并且本地测试完全ok后。再次push到远程仓库。
 
 四、 依赖远程仓库 submodule
+
 git submodule init && git submodule update
 
 五、修改本地分支名与远端分支名
+
 修改本地分支名  git branch -m 'new_branch_name'   
+
 同步本地和远程，执行1、2
+
 1. git push origin :"old_branch_name" "new_branch_name"     delete remote old branch push new branch
 2. git push origin -u new_branch_name     sync local and remote
 
