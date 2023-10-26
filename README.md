@@ -13,7 +13,7 @@
 9.  拷贝分支、上传远端  git checkout -b feature/voip 、git push origin feature/voip
 10. 提交代码  git commit -m "提交内容"
 11. 基于现有分支拉出一条新分支 git checkout -b feature/xxx   git push origin feature/xxx
-12. 基于远程仓库分支拉出一条本地不存在的分支 git checkout -b feature/xxx origin feature/xxx
+12. 基于远程仓库分支拉出一条本地不存在的分支 git checkout -b feature/xxx origin/feature/xxx
 
 #### 首次使用
 git init 
