@@ -81,3 +81,9 @@ git submodule init && git submodule update
 1. git push origin :"old_branch_name" "new_branch_name"     delete remote old branch push new branch
 2. git push origin -u new_branch_name     sync local and remote
 
+四、 修改分支名
+git branch -m main master
+git fetch origin
+git branch -u origin/master master
+git remote set-head origin -a
+
