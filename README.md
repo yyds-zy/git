@@ -89,3 +89,21 @@ git branch -u origin/master master
 git remote set-head origin -a
 ```
 
+# 暂存当前更改，并添加备注信息
+git stash save "my changes"
+ 
+# 列出所有暂存的更改
+git stash list
+ 
+# 应用最新的暂存更改
+git stash apply
+ 
+# 应用最新的暂存更改并从列表中移除
+git stash pop
+ 
+# 删除指定的暂存更改
+git stash drop stash@{0}
+ 
+# 清空所有暂存的更改
+git stash clear
+
