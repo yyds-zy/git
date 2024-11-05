@@ -89,8 +89,10 @@ git branch -u origin/master master
 git remote set-head origin -a
 ```
 
-# 暂存当前更改，并添加备注信息
+五、 暂存区使用
+
 ```
+# 暂存当前更改，并添加备注信息
 git stash save "my changes"
  
 # 列出所有暂存的更改
