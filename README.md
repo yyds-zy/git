@@ -90,6 +90,7 @@ git remote set-head origin -a
 ```
 
 # 暂存当前更改，并添加备注信息
+```
 git stash save "my changes"
  
 # 列出所有暂存的更改
@@ -106,4 +107,8 @@ git stash drop stash@{0}
  
 # 清空所有暂存的更改
 git stash clear
+
+# 查看stash
+git stash show -p stash@{2}
+```
 
