@@ -16,11 +16,12 @@
 12. 基于远程仓库分支拉出一条本地不存在的分支 git checkout -b feature/xxx origin/feature/xxx
 
 #### 首次使用
+```
 git init 
 git config --global user.email ""
 git config --global user.name 
 git remote add origin http://xxx.git
-
+```
 #### 使用场景说明
 
 一、 master为主分支，develop为开发分支。假设我现在在develop分支将项目开发完成，想要将develop分支代码合并到
