@@ -26,10 +26,9 @@ git remote add origin http://xxx.git
 
 一、 master为主分支，develop为开发分支。假设我现在在develop分支将项目开发完成，想要将develop分支代码合并到
 master分支。
-
    具体操作：
-
-...先将现在develop本地代码提交到远端。
+```
+  先将现在develop本地代码提交到远端。
 
   1>git add .
 
@@ -37,50 +36,57 @@ master分支。
 
   3>git push origin develop
 
-...切换到master本地分支并更新master远端仓库。
+  切换到master本地分支并更新master远端仓库。
 
   1>git checkout master
 
   2>git pull origin master
 
-...然后将develop分支的代码合并到master,并同步远端仓库。
+  然后将develop分支的代码合并到master,并同步远端仓库。
 
   1>git merge develop
 
   2>git status
 
   3>git push origin master
+```
 
 二、 master为主分支，从主分支拉取新分支feature/music,完成音乐播放器模块并合并到master分支。
-
     具体操作：
-
-... 首先切换到需要拷贝的分支保证与远程仓库代码一致，拷贝当前分支，提交远程仓库。
+```
+  首先切换到需要拷贝的分支保证与远程仓库代码一致，拷贝当前分支，提交远程仓库。
 
   1>git checkout -b feature/XXX
 
   2>git push origin feature/XXX
 
   3>同操作一
+```
 
 三、 解决冲突
 
-... git merge 分支 发生错误日志（Automatic merge failed; fix conflicts and then commit the result）
+```
+git merge 分支 发生错误日志（Automatic merge failed; fix conflicts and then commit the result）
 
-出现了冲突，请不要慌，在本地调试出正确代码版本并且本地测试完全ok后。再次push到远程仓库。
+出现了冲突，在本地调试出正确代码版本并且本地测试完全ok后。再次push到远程仓库。
+```
 
 四、 依赖远程仓库 submodule
 
+```
 git submodule init && git submodule update
+```
 
 五、修改本地分支名与远端分支名
 
+```
 修改本地分支名  git branch -m 'new_branch_name'   
 
 同步本地和远程，执行1、2
 
 1. git push origin :"old_branch_name" "new_branch_name"     delete remote old branch push new branch
 2. git push origin -u new_branch_name     sync local and remote
+```
 
 六、 修改分支名
 ```
