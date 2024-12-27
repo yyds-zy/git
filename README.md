@@ -15,6 +15,12 @@
 11. 基于现有分支拉出一条新分支 git checkout -b feature/xxx   git push origin feature/xxx
 12. 基于远程仓库分支拉出一条本地不存在的分支 git checkout -b feature/xxx origin/feature/xxx
 
+#### SSH配置
+```
+ssh-keygen -t rsa -b 4096 -C "1311257372@qq.com"
+cat ~/.ssh/id_rsa.pub
+```
+
 #### 首次使用
 ```
 git init 
